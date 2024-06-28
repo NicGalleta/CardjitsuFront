@@ -1,0 +1,77 @@
+/* SalaEspera.css */
+.sala-espera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.sala-espera h1 {
+    font-size: 2.5rem;
+    color: #035AA6;
+    margin-bottom: 1rem;
+}
+
+.sala-espera p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.sala-espera .status {
+    color: #ff5252;
+    margin-top: 1rem;
+}
+
+.sala-espera .jugador {
+    background-color: #6FB6E2;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.link-button {
+    color: white; /* Text color */
+    background-color: red; /* Background color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Makes padding work properly */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Obtenido de https://www.creative-tim.com */
+.progress-5 {    
+    --r1: 154%;  
+    --r2: 68.5%;  
+    width:80px;  
+    height:80px;  
+    border-radius: 50%;   
+    background:  
+     radial-gradient(var(--r1) var(--r2) at top  ,#0000 79.5%,
+  #269af2 80%) center left,  
+     radial-gradient(var(--r1) var(--r2) at bottom,#269af2 79.5%
+  ,#0000 80%) center center,  
+     radial-gradient(var(--r1) var(--r2) at top  ,#0000 79.5%,
+  #269af2 80%) center right,  
+     #ccc;  
+   background-size: 50.5% 220%;  
+    background-position: -100% 0%,0% 0%,100% 0%;  
+    background-repeat:no-repeat;  
+    animation:p5 2s infinite linear;  
+   }  
+   @keyframes p5 {  
+     33% {background-position:  0% 33% ,100% 33% ,200% 33% }  
+     66% {background-position: -100% 66%,0%  66% ,100% 66% }  
+     100% {background-position:  0% 100%,100% 100%,200% 100%} 
+   }

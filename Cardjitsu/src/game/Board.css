@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.general{
+    overflow: clip;
+}
+
+.board-container {
+    width: 1230px; /* Adjust the width of the board container */
+    height: 650px; /* Adjust the height of the board container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    background-size: 100%; /* Ensure the image covers the entire cell */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 105px); /* Adjust the number of columns and cell size */
+    grid-template-rows: repeat(7, 75px); /* Adjust the number of rows and cell size */
+    gap: 0px; /* Space between cells */
+    transform: rotateX(40deg) rotateY(0deg) rotateZ(-50deg); /* Tilt the board */
+    transform-origin: center center;
+    background-color: #ffffff00; /* Background color for the board */
+
+}
+
+.cell {
+    background-image: url('../assets/cellimage3.png'); /* Fallback cell color in case image fails to load */
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cell content color */
+    background-size: 150%; /* Ensure the image covers the entire cell */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    position: relative;
+}
+
+.player {
+    position: absolute; /* Position the player sprite absolutely within the cell */
+    top: 70%; /* Adjust to position the sprite */
+    left: 50%; /* Adjust to position the sprite */
+    transform: translate(-10%, -80%) rotate(45deg); /* Center and rotate the sprite */
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    z-index: 10; /* Ensure the player div is on top of other elements */
+    background-size: contain; /* Ensure the image scales correctly */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    display : flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Press Start 2P'; /* Apply the boxy font */
+    font-size: 14px;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+
+}
+
+.MovePad {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 1000;
+    left: 10%;
+    transform: translateY(100%);
+    background-image: url('../assets/dpad.png');
+    z-index: 8;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 9;
+    position: absolute;
+
+}
+
+.link-button {
+    color: white; /* Text color */
+    background-color: red; /* Background color */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    display: inline-block; /* Makes padding work properly */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.link-button:hover {
+    background-color: rgb(244, 60, 60); /* Darker background on hover */
+    color: white; /* Text color on hover */
+    cursor: pointer; 
+}
+
+.log-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+  }
+  
+  /* Styles for individual log messages */
+  .log-message {
+    background-color: #1d1d1d;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0px;
+    margin: 5px 0; /* Minimal space between log messages */
+    width: 50%; /* Adjust width as needed */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #25ff5f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+h2 {
+    font-size: 34px;
+    color: white; /* Text color */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}

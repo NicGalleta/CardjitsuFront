@@ -1,0 +1,72 @@
+
+
+.grid-container-princial {
+    display: grid;
+    grid-template-rows: 60% 35% 5%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grid-container-princial > div {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.contenedor-primario{
+    margin: 5%;
+    margin-right: 5%;
+}
+
+.grid-container-cartas {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    gap: 5%;
+}
+
+.grid-container > div {
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+
+  }
+
+.carta-ataque {
+    border: 2px dashed black;
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+    height: 5cm;
+}
+
+.dojo{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.reloj{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+
+    text-align: center;
+    border: 4px solid black;
+
+}
+.grid-contenedor-jugadores{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 10px;
+    gap: 10px;
+}
+
+.texto-reloj{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+    

@@ -1,0 +1,24 @@
+.cards-container {
+    display: flex;
+    justify-content: space-around; /* Distributes cards evenly with space around them */
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff; /* White background for the card */
+    color: #000000; /* Black text color */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 30%; /* Adjust the width as necessary */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 5px 0;
+    color: #000000;
+}

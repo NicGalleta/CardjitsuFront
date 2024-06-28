@@ -1,0 +1,31 @@
+
+.podio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center; /* Centrar el grid horizontalmente */
+
+}
+.podio > div{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 200px;
+
+}
+.segundo-lugar{
+    margin-left: 11cm;
+    margin-top: 2cm;
+    margin-bottom: 1px;
+}
+
+.primer-lugar{
+    margin-left: 80px;
+    margin-right: 6cm;
+    margin-bottom: 1px;
+}
+
+.tercer-lugar{
+    margin-left: -4cm;
+    margin-top: 4cm;
+    margin-bottom: 1px;
+}

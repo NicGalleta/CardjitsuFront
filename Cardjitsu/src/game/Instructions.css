@@ -1,0 +1,29 @@
+.instruction-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.instruction-column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.title-section {
+    margin-top: 100px; /* Ajusta este valor según sea necesario para evitar la superposición */
+}
+
+body {
+    background: radial-gradient(circle, #035AA6, #6FB6E2); 
+    margin: 0; 
+    min-height: 100vh; 
+    min-width: 100vw;
+    display: flex; 
+    justify-content: flex-start; /* Ajustado para alinear el contenido en el lado izquierdo */
+    align-items: center; /* Añadido para centrar verticalmente el contenido */
+    padding: 20px;
+    flex-direction: column; /* Agregado para organizar los elementos en columnas */
+}

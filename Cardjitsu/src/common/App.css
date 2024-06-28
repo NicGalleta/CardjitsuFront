@@ -1,0 +1,197 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#boton_simple {
+  padding:20px
+}
+
+.sensei-logo {
+  position: absolute;
+  bottom: 0; /* Establece la posición vertical en la parte inferior */
+  left: 0; /* Establece la posición horizontal en la parte izquierda */
+  width: 500px; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Mantén la proporción de la imagen */
+}
+
+/* App.css */
+
+/* Button Animation */
+#boton_simple {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#boton_simple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.6s ease;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+#boton_simple:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#boton_simple:hover {
+  background-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+
+body {
+  background: radial-gradient(circle, #035AA6, #6FB6E2); 
+  margin: 0; 
+  min-height: 100vh; /* Usa min-height en lugar de height para permitir que el cuerpo crezca con el contenido */
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding: 20px; /* Agrega relleno para separar el contenido del borde del cuerpo */
+}
+
+
+#login_button {
+  color: white;
+  background-color: #FFB72C; /* Verde */
+  display: inline-block;
+  padding: 15px 30px; /* Aumenta el espacio de relleno para agrandar los botones */
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#login_button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.6s ease;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+#login_button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#login_button:hover {
+  background-color: #FFB72C; /* Verde más oscuro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+#signup_button {
+  
+  color: white;
+  background-color: #BF1120; /* Azul */
+  display: inline-block;
+  padding: 15px 30px; /* Aumenta el espacio de relleno para agrandar los botones */
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+#signup_button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.6s ease;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+#signup_button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#signup_button:hover {
+  background-color: #BF1120; /* Azul más oscuro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+  justify-content: center; /* Centra verticalmente */
+}
+
+.card-logo {
+  width: 500px; /* Ajusta el ancho según sea necesario */
+  height: auto; /* Mantiene la proporción */
+}
+
